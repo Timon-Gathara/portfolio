@@ -1,0 +1,128 @@
+
+.navbar img{
+    border-radius: 50%;
+    margin-right: 200px;
+    width: 100px;
+    height: 110px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 60px;
+    text-align: center;
+
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+    color: lightblue;
+    caret-color: aqua;
+}
+
+header {
+    text-align: center;
+    padding: 0px;
+    background-color: #f4f4f4;
+}
+h1 {
+    margin: 0;
+    padding: 20px 0;
+    font-size: 36px;
+    color: #333;
+}
+
+.about{
+    margin: 10PX;
+    padding: 20px;
+    background-color: #e2e2e2;
+    border-radius: 50px;
+    margin-right: 0%;
+}
+
+.education{
+    margin: 10PX;
+    padding: 20px;
+    background-color:#e2e2e2;
+    border-radius: 10px;
+    margin-right: 0%;
+    font-size: 20px;
+    color: black;
+
+}
+.contact{
+    margin: 10PX;
+    padding: 20px;
+    background-color: #e2e2e2;
+    border-radius: 10px;
+    margin-right: 0%;
+    font-size: 20px;
+    color: black;
+    gap: 80px;
+
+}
+h1 {
+    margin: 0;
+    padding: 0px 0;
+    font-size: 36px;
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    height: 50px;
+    margin: 0px;
+    padding: 10px;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+a:hover {
+    text-decoration: underline;
+    color: lightblue;
+    caret-color: aqua;
+}
+h2 {
+    color: #333;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #E0023A
+}
