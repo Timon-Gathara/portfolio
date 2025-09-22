@@ -126,3 +126,38 @@ body {
     padding: 0;
     background-color: #E0023A
 }
+/* Mobile */
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  /* Show hamburger icon */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Hide menu by default */
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    gap: 15px;
+  }
+
+  /* Show menu when active */
+  nav ul.active {
+    display: flex;
+  }
+
+  section {
+    padding: 80px 15px;
+  }
+
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+}
