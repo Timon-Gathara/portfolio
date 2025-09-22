@@ -1,131 +1,280 @@
-
-.navbar img{
-    border-radius: 50%;
-    margin-right: 200px;
-    width: 100px;
-    height: 110px;
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 60px;
-    text-align: center;
-
-}
-
-.navbar ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-    text-align: center;
-    justify-content: space-evenly;
-}
-
-.navbar ul li a:hover {
-    text-decoration: underline;
-    color: lightblue;
-    caret-color: aqua;
-}
-
-header {
-    text-align: center;
-    padding: 0px;
-    background-color: #f4f4f4;
-}
-h1 {
-    margin: 0;
-    padding: 20px 0;
-    font-size: 36px;
-    color: #333;
-}
-
-.about{
-    margin: 10PX;
-    padding: 20px;
-    background-color: #e2e2e2;
-    border-radius: 50px;
-    margin-right: 0%;
-}
-
-.education{
-    margin: 10PX;
-    padding: 20px;
-    background-color:#e2e2e2;
-    border-radius: 10px;
-    margin-right: 0%;
-    font-size: 20px;
-    color: black;
-
-}
-.contact{
-    margin: 10PX;
-    padding: 20px;
-    background-color: #e2e2e2;
-    border-radius: 10px;
-    margin-right: 0%;
-    font-size: 20px;
-    color: black;
-    gap: 80px;
-
-}
-h1 {
-    margin: 0;
-    padding: 0px 0;
-    font-size: 36px;
-    color: #333;
-}
-
-footer {
-    text-align: center;
-    background-color: #333;
-    color: white;
-    height: 50px;
-    margin: 0px;
-    padding: 10px;  
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-
-a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-    text-align: center;
-    justify-content: space-evenly;
-    margin: 10px;
-}
-a:hover {
-    text-decoration: underline;
-    color: lightblue;
-    caret-color: aqua;
-}
-h2 {
-    color: #333;
-}
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #E0023A
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background: #0f0f0f;
+  color: #eaeaea;
+  scroll-behavior: smooth;
+  
 }
+
+/* Navbar */
+nav {
+  background: rgba(15, 15, 15, 0.95);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+}
+
+nav a {
+  color: #eaeaea;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: #ff5722;
+  transition: width 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff5722;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+.img#profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+}
+/* Section layout */
+section {
+  padding: 100px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Section backgrounds with gradient alternation */
+#about { background: linear-gradient(135deg, #1e1e1e, #0f0f0f); 
+margin : 20px; border-radius: 10%;}
+#experience { background: linear-gradient(135deg, #0f0f0f, #1e1e1e); margin: 20px; border-radius: 10%; }
+#academics { background: linear-gradient(135deg, #d4d1d1, #0f0f0f); margin: 20px; border-radius: 10%; }
+#contact { background: linear-gradient(135deg, #0f0f0f, #1e1e1e); margin: 20px; border-radius: 10%; }
+
+/* Headings */
+h1, h2 {
+  margin-bottom: 20px;
+  color: #ff5722;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 2rem;
+}
+
+p {
+  max-width: 800px;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  color: #dcdcdc;
+}
+
+/* Card styling for lists */
+        /* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background: #0f0f0f;
+  color: #eaeaea;
+  scroll-behavior: smooth;
+}
+#profile-pic{
+    width: 70px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+/* Navbar */
+nav {
+  background: rgba(15, 15, 15, 0.95);
+  padding: 0% 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+}
+
+/* Logo / Name */
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff5722;
+}
+
+/* Desktop Menu */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+}
+
+nav ul li a {
+  color: #eaeaea;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: #ff5722;
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff5722;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* Mobile Menu (hidden by default) */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: #eaeaea;
+  cursor: pointer;
+}
+
+/* Sections */
+section {
+  padding: 100px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Section backgrounds */
+#about { background: linear-gradient(135deg, #1e1e1e, #0f0f0f); }
+#experience { background: linear-gradient(135deg, #0f0f0f, #1e1e1e); }
+#academics { background: linear-gradient(135deg, #1e1e1e, #0f0f0f); }
+#contact { background: linear-gradient(135deg, #0f0f0f, #1e1e1e); }
+
+/* Headings */
+h1, h2 {
+  margin-bottom: 20px;
+  color: #ff5722;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+p {
+  max-width: 800px;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  color: #dcdcdc;
+}
+
+/* Card styling */
+ul {
+  list-style: none;
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+ul li {
+  background: #1c1c1c;
+  margin: 12px 0;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+ul li:hover {
+  transform: translateY(-5px);
+  background: #252525;
+  shape-outside: margin-box;
+}
+
+/* Contact links */
+#contact a {
+  color: #ff5722;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contact a:hover {
+  color: #ffa366;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #68635f;
+  color: #888;
+  font-size: 14px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0% 10px;
+    gap: 15px;
+}
+
+/* =====================
+   RESPONSIVE DESIGN
+===================== */
+
+/* Tablets */
+@media (max-width: 992px) {
+  h1, h2 {
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+
 /* Mobile */
 @media (max-width: 768px) {
   nav {
